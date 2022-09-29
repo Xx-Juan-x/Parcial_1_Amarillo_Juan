@@ -1,0 +1,27 @@
+{
+  "name": "parcial-1-amarillo-juan-ignacio",
+  "version": "1.0.0",
+  "description": "Parcial_1_MCGA_2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xx-Juan-x/Parcial_1_Amarillo_Juan.git"
+  },
+  "author": "Amarillo_Juan_Ignacio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xx-Juan-x/Parcial_1_Amarillo_Juan/issues"
+  },
+  "homepage": "https://github.com/Xx-Juan-x/Parcial_1_Amarillo_Juan#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
