@@ -8,9 +8,9 @@ const app = express();
 app.use(express.json());
 app.use(router);
 
-
+//GET: para hacer ping al servidor y que devuelva 'OK' en caso que el server y la BD estén levantadas
 app.get('/',(req, res)=>{
-    res.send(200, "Bienvenido al servidor");
+    res.send(200, "OK");
 })
 
 mongoose.connect(process.env.DB_CONNECT)
