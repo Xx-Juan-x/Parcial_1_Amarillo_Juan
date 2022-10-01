@@ -25,10 +25,6 @@ const ProductsSchemas = new Schema({
         type: String,
         maxlenght: 100,
     },
-    isDeleted:{
-        type: Boolean,
-        default: false
-    }
 })
 
 module.exports = mongoose.model("Products", ProductsSchemas);
