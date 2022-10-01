@@ -4,7 +4,7 @@ const products = require('../models/products');
 
 //GET: para conseguir la lista entera de productos
 listProducts = (req, res) =>{
-    products.find({isDeleted: false})
+    products.find()
     .then(data => res.status(200).json(data))
     .catch(error => res.status(500).json({mensaje: error}));
 }
