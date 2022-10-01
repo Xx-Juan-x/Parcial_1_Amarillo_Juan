@@ -1,17 +1,11 @@
 const router = require('express').Router();
-const products = require('../schemes/products');
 
-//Endpoints
+const { getProducts, searchProduct, addProduct } = require('../controllers/products');
 
-//GET: para conseguir la lista entera de productos
-router.get('/', (req, res) =>{
-    products.find({isDeleted: false})
-    .then(data => res.status(200).json(data))
-    .catch(error => res.status(500).json({mensaje: error}))
-})
+router.get('/', (req, res) => listProducts(req, res))
 
+router.get('/:name', (req,res) => searchProduct(req, res))
 
-
-
+router.post("/add", (req,res) => addProduct(req, res))
 
 module.exports = router;
